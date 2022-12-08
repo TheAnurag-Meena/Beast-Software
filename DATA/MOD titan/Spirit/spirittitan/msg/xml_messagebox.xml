@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="410,226" caption="0,0,0,40" mininfo="410,226" >
+	<Font id="0" name="微软雅黑" size="16" bold="false" italic="false" />
+	<Font id="1" name="微软雅黑" size="13" bold="false" italic="false" />
+  <VerticalLayout bkimage="file=&apos;windowbg_bold.png&apos; corner=&apos;4,4,4,4&apos; mask=&apos;0xffff00ff&apos;">
+      <HorizontalLayout height="36" bkcolor="#FF191a21">
+          <Label name="titlelabel" text="@prompt" width="164" font="1" textpadding="18,0,0,0" textcolor="#FFCCCCCC" disabledtextcolor="#FFA7A6AA" showhtml="true" />
+          <Control />
+          <Button name="closebtn" padding="0,3,4,0" width="34" height="34" align="center" normalimage="file=&apos;msg/msg_close_btn.png&apos; source=&apos;0,0,34,34&apos; mask=&apos;0xffff00ff&apos;" hotimage="file=&apos;msg/msg_close_btn.png&apos; source=&apos;34,0,68,34&apos;" pushedimage="file=&apos;msg/msg_close_btn.png&apos; source=&apos;68,0,102,34&apos;" />
+      </HorizontalLayout>
+      <VerticalLayout bkcolor="#FF21222d">
+          <HorizontalLayout>
+            <VerticalLayout width="80">   
+              <Control name="msgiconimage" width="36" height="36" padding="30,49,0,0" bkimage="msg/msg_error_icon.png" />
+			</VerticalLayout>  
+			<VerticalLayout>  
+			  <Control />
+              <Label name="descriptlabel" text="" width="319" align="left" textpadding="10,0,10,0" textcolor="#FFFFFFFF" disabledtextcolor="#FFA7A6AA" font="0" multiline="true" />
+			  <Control />
+			</VerticalLayout>  
+		  </HorizontalLayout>
+          <HorizontalLayout name="bottombar_yesno" height="52" visible="false">
+            <Control />
+            <Button name="yesbtn" text="@UI.Confirm" width="92" height="32" font="1" align="center" textcolor="#FFFEFEFE" normalimage="file='gaga\save_normal_btn.png'" hotimage="file='gaga\save_light_btn.png'" pushedimage="file='gaga\save_pressed_btn.png'" />
+            <Control width="50" />
+            <Button name="nobtn" text="@UI.Cancel" width="92" height="32" font="1" align="center" textcolor="#FFFEFEFE" normalimage="file='gaga\cancel_normal_btn.png'" hotimage="file='gaga\cancel_light_btn.png'" pushedimage="file='gaga\cancel_pressed_btn'" />
+            <Control />
+            <Container name="mode_ok" visible="false">
+            <Control />
+            <Button name="okbtn" width="159" height="32" align="center" font="1" normalimage="file=&apos;gaga/Confirm_nor_btn.png&apos;" hotimage="file=&apos;gaga/Confirm_light_btn.png&apos;" pushedimage="file=&apos;gaga/Confirm_pressed_btn.png&apos;" />
+            <Control />
+            </Container>
+          </HorizontalLayout>
+          <HorizontalLayout name="bottombar_ok" height="52" visible="false">
+            <Control />
+            <Button name="okbtn" text="@UI.Confirm" font="1"  width="159" height="32" align="center" normalimage="file=&apos;gaga/Confirm_nor_btn.png&apos;" hotimage="file=&apos;gaga/Confirm_light_btn.png&apos;" pushedimage="file=&apos;gaga/Confirm_pressed_btn.png&apos;" />  
+            <Control />
+          </HorizontalLayout>
+          <HorizontalLayout name="bottombar_report" height="52" visible="false">
+            <Control />
+            <Button name="reportbtn" text="@UI.Report" font="1"  width="159" height="32" align="center" normalimage="file=&apos;gaga/Confirm_nor_btn.png&apos;" hotimage="file=&apos;gaga/Confirm_light_btn.png&apos;" pushedimage="file=&apos;gaga/Confirm_pressed_btn.png&apos;" />  
+            <Control />
+          </HorizontalLayout>
+      </VerticalLayout>
+  </VerticalLayout>
+</Window>

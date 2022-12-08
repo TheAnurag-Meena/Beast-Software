@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="270,80" mininfo="270,40" bktrans="true" layeredimage="" layeredopacity="255">
+    <Font id="0" name="微软雅黑" size="12" bold="false" italic="false" />
+    <Font id="1" name="微软雅黑" size="14" bold="false" italic="false" />
+    <Font id="2" name="微软雅黑" size="16" bold="false" italic="false" />
+    <Font id="3" name="微软雅黑" size="18" bold="false" italic="false" />
+    <HorizontalLayout>
+        <Button name="logoBtn" mouse="false" padding="5,3,0,0" width="19" height="22" normalimage="file=&apos;gaga/poptips_logo.png&apos; source=&apos;0,0,19,22&apos; dest=&apos;0,0,15,18&apos;" />
+        <RichEdit name="titleNameBtn" textpadding="2,3,0,0" textcolor="#FFFFFFFF" align="left" width="150" text="@UI.Title" padding="0,-2,0,0" font="0"/>
+        <Control />
+        <Button name="closebtn" padding="0,0,0,0" tooltip="@UI.Tooltip.Close" width="24" height="24" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;gaga\title_close_btn.png&apos; source=&apos;0,0,24,24&apos; mask=&apos;0xffff00ff&apos;" hotimage="file=&apos;gaga\title_close_btn.png&apos; source=&apos;24,0,48,24&apos;" pushedimage="file=&apos;gaga\title_close_btn.png&apos; source=&apos;48,0,72,24&apos;" />
+    </HorizontalLayout>
+</Window>

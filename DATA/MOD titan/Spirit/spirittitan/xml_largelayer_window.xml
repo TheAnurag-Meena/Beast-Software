@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="568,596" mininfo="30,362" caption="0,0,0,42">
+  <Font id="0" name="微软雅黑" size="12" bold="false" italic="false" />
+  <Font id="1" name="微软雅黑" size="14" bold="false" italic="false" />
+  <Font id="2" name="微软雅黑" size="16" bold="true" italic="false" />
+  <HorizontalLayout>
+    <Button name="screenshotbtn" font="1" width="290" height="36" textcolor="#FFFFFFFF" text="@UI.ScreenCaptureCompleted" align="center" hotimage="file=&apos;gaga/screencompletedpng.png&apos;"  normalimage="file=&apos;gaga/screencompletedpng.png&apos;" pushedimage="file=&apos;gaga/screencompletedpng.png&apos;" visible="false" />
+    <Label name="esckeyexitlabel" height="36" align="center" textcolor="#FFFFFFFF" bkimage="file='gaga/esc.png'" text="@UI.PressF11Tips" font="1" visible="false"/>
+    <Label name="KeyTipsLabel" width="290" height="36" align="center" textcolor="#FFFFFFFF" bkimage="file=&apos;gaga/esc.png&apos;"  text="@UI.PressF1Tips" font="1" visible="false"/>
+    <Label name="rightclicktipslabel" width="290" height="36" align="center" textcolor="#FFFFFFFF" bkimage="file=&apos;gaga/esc.png&apos;"  text="@UI.Press~Tips" font="1" visible="false"/>
+  </HorizontalLayout>
+</Window>

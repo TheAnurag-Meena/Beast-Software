@@ -1,0 +1,20 @@
+J:\Smartgaga fix tool\Spirit Smartgaga Fix\bin\x64\Release\Spirit Smartgaga Fix.exe.config
+J:\Smartgaga fix tool\Spirit Smartgaga Fix\bin\x64\Release\Spirit Smartgaga Fix.exe
+J:\Smartgaga fix tool\Spirit Smartgaga Fix\bin\x64\Release\Spirit Smartgaga Fix.pdb
+J:\Smartgaga fix tool\Spirit Smartgaga Fix\obj\x64\Release\Spirit_Smartgaga_Fix.Form1.resources
+J:\Smartgaga fix tool\Spirit Smartgaga Fix\obj\x64\Release\Spirit_Smartgaga_Fix.Properties.Resources.resources
+J:\Smartgaga fix tool\Spirit Smartgaga Fix\obj\x64\Release\Spirit Smartgaga Fix.csproj.GenerateResource.cache
+J:\Smartgaga fix tool\Spirit Smartgaga Fix\obj\x64\Release\Spirit Smartgaga Fix.csproj.CoreCompileInputs.cache
+J:\Smartgaga fix tool\Spirit Smartgaga Fix\obj\x64\Release\Spirit Smartgaga Fix.exe
+J:\Smartgaga fix tool\Spirit Smartgaga Fix\obj\x64\Release\Spirit Smartgaga Fix.pdb
+J:\Smartgaga fix tool\Spirit Smartgaga Fix\obj\x64\Release\Spirit Smartgaga Fix.csprojAssemblyReference.cache
+J:\Smartgaga Fix Tool Joker\bin\x64\Release\Joker Smartgaga Fix.exe.config
+J:\Smartgaga Fix Tool Joker\bin\x64\Release\Joker Smartgaga Fix.exe
+J:\Smartgaga Fix Tool Joker\bin\x64\Release\Joker Smartgaga Fix.pdb
+J:\Smartgaga Fix Tool Joker\obj\x64\Release\Spirit Smartgaga Fix.csprojAssemblyReference.cache
+J:\Smartgaga Fix Tool Joker\obj\x64\Release\Joker_Smartgaga_Fix.Form1.resources
+J:\Smartgaga Fix Tool Joker\obj\x64\Release\Joker_Smartgaga_Fix.Properties.Resources.resources
+J:\Smartgaga Fix Tool Joker\obj\x64\Release\Spirit Smartgaga Fix.csproj.GenerateResource.cache
+J:\Smartgaga Fix Tool Joker\obj\x64\Release\Spirit Smartgaga Fix.csproj.CoreCompileInputs.cache
+J:\Smartgaga Fix Tool Joker\obj\x64\Release\Joker Smartgaga Fix.exe
+J:\Smartgaga Fix Tool Joker\obj\x64\Release\Joker Smartgaga Fix.pdb

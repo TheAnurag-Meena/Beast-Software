@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="568,596" mininfo="30,362" caption="0,0,0,42">
+  <Font id="0" name="微软雅黑" size="12" bold="false" italic="false" />
+  <Font id="1" name="微软雅黑" size="14" bold="false" italic="false" />
+  <Font id="2" name="微软雅黑" size="16" bold="true" italic="false" />
+  <VerticalLayout name="keyboardinfovl" width="568" height="596" bkcolor="#FFFEFEFE" visible="true">
+    <HorizontalLayout height="42" bkcolor="#FF0573F8">
+       <Label name="keyboardlabel" text="Press &quot;F12&quot; Hide this page, Press again could show up the page!" font="1" width="475" textcolor="0xFFFFFFFF" visible="false"/>
+	   <Option name="keyboardtipsoption" height="18" width="18" padding="6,10,10,0" multiline="true"   normalimage="file=&apos;checkbox_unselected.png&apos;  dest=&apos;0,0,18,18&apos; source=&apos;0,0,18,18&apos; corner=&apos;4,4,4,4&apos; mask=&apos;0xffff00ff&apos;" hotimage="file=&apos;checkbox_unselected.png&apos; dest=&apos;0,0,18,18&apos;  source=&apos;18,0,36,18&apos; corner=&apos;4,4,4,4&apos; mask=&apos;0xffff00ff&apos;" hottextcolor="#FFFFFFFF" selectedimage="file=&apos;checkbox_selected.png&apos;  dest=&apos;0,0,18,18&apos; source=&apos;0,0,18,18&apos; corner=&apos;4,4,4,4&apos; mask=&apos;0xffff00ff&apos;" selectedhotimage="file=&apos;checkbox_selected.png&apos; dest=&apos;0,0,18,18&apos;  source=&apos;18,0,36,18&apos; corner=&apos;4,4,4,4&apos; mask=&apos;0xffff00ff&apos;" normalimage="file=&apos;checkbox_unselected.png&apos;  dest=&apos;0,0,18,18&apos; source=&apos;0,0,18,18&apos;" hotimage="file=&apos;checkbox_unselected.png&apos; dest=&apos;0,0,18,18&apos;  source=&apos;18,0,36,18&apos;" hottextcolor="#FFFFFFFF" selectedimage="file=&apos;checkbox_selected.png&apos;  dest=&apos;0,0,18,18&apos; source=&apos;0,0,18,18&apos;" selectedhotimage="file=&apos;checkbox_selected.png&apos; dest=&apos;0,0,18,18&apos;  source=&apos;18,0,36,18&apos;" normalEnlargeImage="file=&apos;checkbox_unselected_enlarge.png&apos;  dest=&apos;0,0,27,27&apos; source=&apos;0,0,27,27&apos;" hotEnlargeImage="file=&apos;checkbox_unselected_enlarge.png&apos; dest=&apos;0,0,27,27&apos;  source=&apos;27,0,54,27&apos;" hottextcolor="#FFFFFFFF" selectedEnlargeImage="file=&apos;checkbox_selected_enlarge.png&apos;  dest=&apos;0,0,27,27&apos; source=&apos;0,0,27,27&apos;" selectedhotEnlargeImage="file=&apos;checkbox_selected_enlarge.png&apos; dest=&apos;0,0,27,27&apos;  source=&apos;27,0,54,27&apos;"/>
+       <Label name="" text="Don't pop up this window next time." textcolor="#00FFFFFF" font="0" disabledtextcolor="#FFA7A6AA" align="left"/>
+	   <Button name="closebtn" tooltip="@close_tip" width="24" height="24" padding="6,6,21,0" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;gaga\title_close_btn.png&apos; source=&apos;0,0,24,24&apos; mask=&apos;0xffff00ff&apos;" hotimage="file=&apos;gaga\title_close_btn.png&apos; source=&apos;24,0,48,24&apos;" pushedimage="file=&apos;gaga\title_close_btn.png&apos; source=&apos;48,0,72,24&apos;" />
+    </HorizontalLayout>
+    <VerticalLayout height="554" bkcolor="#FFFEFEFE" name="gameinfovl">
+       <HorizontalLayout>
+          <VerticalLayout padding="20,20,12,0" name="itemvl0" visible="false" height="251" width="161">
+            <HorizontalLayout bkcolor="#FF6157EB" height="44" >
+               <Label name="itemlabel0" text="" font="1" width="161" textcolor="0xFFFFFFFF" />
+            </HorizontalLayout>
+            <HorizontalLayout bkcolor="#33645AEB" name="itemhl0">
+            </HorizontalLayout>
+          </VerticalLayout>
+          <VerticalLayout padding="12,20,12,0" name="itemvl1" visible="false" height="251" width="161">
+            <HorizontalLayout bkcolor="#FFA254DF" height="44" >
+               <Control />
+               <Label name="itemlabel1" text="" font="1" width="161" textcolor="0xFFFFFFFF" />
+               <Control />
+            </HorizontalLayout>
+            <HorizontalLayout bkcolor="#33A457E0" name="itemhl1" >
+            </HorizontalLayout>
+          </VerticalLayout>
+		  <VerticalLayout padding="12,20,20,0" name="itemvl2" visible="false" height="251" width="161">
+            <HorizontalLayout bkcolor="#FFF75E5E" height="44" >
+               <Control />
+               <Label name="itemlabel2" text="" font="1" width="161" textcolor="0xFFFFFFFF" />
+               <Control />
+            </HorizontalLayout>
+            <HorizontalLayout bkcolor="#33F76161" height="207" name="itemhl2" >
+            </HorizontalLayout>
+          </VerticalLayout>
+       </HorizontalLayout>
+	   <HorizontalLayout>
+          <VerticalLayout padding="20,12,12,20" name="itemvl3" visible="false" height="251" width="161">
+            <HorizontalLayout bkcolor="#FFF79A61" height="44" >
+               <Control />
+               <Label name="itemlabel3" text="" font="1" width="161" textcolor="0xFFFFFFFF" />
+               <Control />
+            </HorizontalLayout>
+            <HorizontalLayout bkcolor="#33F79C64" name="itemhl3" >
+            </HorizontalLayout>
+          </VerticalLayout>
+          <VerticalLayout padding="12,12,12,20" name="itemvl4" visible="false" height="251" width="161">
+            <HorizontalLayout bkcolor="#FFF7CF64" height="44" >
+               <Control />
+               <Label name="itemlabel4" text="" font="1" width="161" textcolor="0xFFFFFFFF"/>
+               <Control />
+            </HorizontalLayout>
+            <HorizontalLayout bkcolor="#33F7D067" name="itemhl4">
+            </HorizontalLayout>
+          </VerticalLayout>
+		  <VerticalLayout padding="12,12,20,20" name="itemvl5" visible="false" height="251" width="161">
+            <HorizontalLayout bkcolor="#FF59C2AF" height="44" >
+               <Control />
+               <Label name="itemlabel5" text="" font="1" width="161" textcolor="0xFFFFFFFF"/>
+               <Control />
+            </HorizontalLayout>
+            <HorizontalLayout bkcolor="#335CC3B1" name="itemhl5" >
+            </HorizontalLayout>
+          </VerticalLayout>
+       </HorizontalLayout>
+    </VerticalLayout>
+  </VerticalLayout>
+</Window>

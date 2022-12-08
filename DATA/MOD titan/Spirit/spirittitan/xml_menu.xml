@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="120,228" >
+    <Font id="0" name="微软雅黑" size="12" bold="false" italic="false" default="true"/>
+    <Font id="1" name="微软雅黑" size="14" bold="false" italic="false" />
+    <Font id="2" name="微软雅黑" size="16" bold="false" italic="false" />
+    <Font id="3" name="微软雅黑" size="18" bold="false" italic="false" />
+    <VerticalLayout name="bkLayout" bkimage="file=&apos;menu_bg.png&apos; corner=&apos;4,4,4,4&apos; mask=&apos;0xffff00ff&apos;">
+        <!--<VerticalLayout name="menuListLayout" padding="1,1,0,0">
+        </VerticalLayout>-->
+        <List name="menuList" header="hidden" inset="1,3,1,3" itemtextcolor="#FFC8C6CB" 
+            itemselectedtextcolor="#FFC8C6CB" itemhottextcolor="#FFC8C6CB" 
+            itembkcolor="#FF18202F" itemselectedbkcolor="#FF101117" itemhotbkcolor="#FF101117">
+            <ListContainerElement name="menuCleanAppData" height="32" >
+                <Label text="@UI.ClearCache" tooltip="@UI.Tooltip.ClearCache" textcolor="#FFC8C6CB" align="center"/>
+            </ListContainerElement>
+            <ListContainerElement name="menuKillBackgrounds" height="32" >
+                <Label text="@UI.KillBackgrounds" tooltip="@UI.Tooltip.KillBackgrounds" textcolor="#FFC8C6CB" align="center"/>
+            </ListContainerElement>
+            <ListContainerElement name="menuRotateScreen" height="32" >
+                <Label text="@UI.RotateScreen" tooltip="@UI.Tooltip.RotateScreen" textcolor="#FFC8C6CB" align="center"/>
+            </ListContainerElement>
+            <ListContainerElement name="menuSettings" height="32" >
+                <Label text="@UI.Settings" tooltip="@UI.Tooltip.Settings" textcolor="#FFC8C6CB" align="center"/>
+            </ListContainerElement>
+            <ListContainerElement name="menuCheckUpdate" height="32" > 
+				<Label text="@UI.CheckUpdate" tooltip="@UI.Tooltip.CheckUpdate" textcolor="#FFC8C6CB" align="center" />
+				<Control name="menuCheckUpdateRedPoint" width="6" height="6" bkimage="gaga\red_point_2.png" float="true" pos="112,1,0,0" visible="false"/>
+            </ListContainerElement>
+            <ListContainerElement name="menuReport" height="32" >
+                <Label text="@UI.Feedback" tooltip="@UI.Tooltip.Feedback" textcolor="#FFC8C6CB" align="center"/>
+            </ListContainerElement>
+            <ListContainerElement name="menuAbout" height="32" >
+                <Label text="@UI.About" tooltip="@UI.Tooltip.About" textcolor="#FFC8C6CB" align="center"/>
+            </ListContainerElement>
+        </List>
+    </VerticalLayout>
+</Window>

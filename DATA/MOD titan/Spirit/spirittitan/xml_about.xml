@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="340,480" caption="0,0,0,200" mininfo="300,200">
+    <Font id="0" name="微软雅黑" size="12" bold="false" italic="false" />
+    <Font id="1" name="微软雅黑" size="14" bold="false" italic="false" />
+    <Font id="2" name="微软雅黑" size="16" bold="false" italic="false" />
+	<Font id="3" name="微软雅黑" size="20" bold="false" italic="false" />
+	<Font id="4" name="微软雅黑" size="11" bold="false" italic="false" />
+    <VerticalLayout bkimage="file=&apos;windowbg_bold.png&apos; corner=&apos;4,4,4,4&apos; mask=&apos;0xffff00ff&apos;">
+        <HorizontalLayout height="42" padding="0,1,1,0">
+            <Label name="titlelabel" text="@UI.About" width="164" textpadding="16,12,0,0" textcolor="#00D3E5E2" disabledtextcolor="#FFA7A6AA" font="2" showhtml="true" />
+            <Control width="134"/>
+            <Button name="closebtn" padding="0,4,0,0" width="34" height="34" align="center" normalimage="file=&apos;title_close_btn_s.png&apos; source=&apos;0,0,34,34&apos; mask=&apos;0xffff00ff&apos;" hotimage="file=&apos;title_close_btn_s.png&apos; source=&apos;34,0,68,34&apos;" pushedimage="file=&apos;title_close_btn_s.png&apos; source=&apos;68,0,102,34&apos;"/>
+        </HorizontalLayout>
+        <VerticalLayout >
+			<Control  width="100" height="120" padding="118,40,0,0" bkimage="gaga/About_logo.png" />
+			<VerticalLayout>
+			<Label name="versionLabel" text=""  padding="0,20,0,0" align="center" textcolor="#FFFFFFFF" disabledtextcolor="#FFA7A6AA" font="3" />
+			<Label name="aboutlabel1" text="" font="4"  align="center" textcolor="#FFFFFFFF" disabledtextcolor="#FFA7A6AA" />
+			<Label name="aboutlabel2" text="" font="4"  align="center" textcolor="#FFFFFFFF" disabledtextcolor="#FFA7A6AA" />
+			<Label name="aboutlabel3" text="" font="4"  align="center" textcolor="#FFFFFFFF" disabledtextcolor="#FFA7A6AA" />
+			<RichEdit name="aboutlabel4" text="" height="20" readonly="true" font="4" mouse="true" enable="false" align="center" textcolor="#FFFFFFFF" disabledtextcolor="#FFA7A6AA" />
+			<Label name="aboutlabel5" padding="30,0,10,0" text="@UI.ReportProblem" font="0" align="center" textcolor="#FFFFFFFF" disabledtextcolor="#FFA7A6AA" multiline="true"/>
+			</VerticalLayout>
+			<Button name="reportbtn" float="true" pos="125,380,100,30" text="@UI.Report" font="0" height="30" width="90" textpadding="20,0,20,0" textcolor="#FFFEFEFE" disabledtextcolor="#FFA7A6AA"  align="center" normalimage="file='gaga\save_normal_btn.png'" hotimage="file='gaga\save_light_btn.png'" pushedimage="file='gaga\save_pressed_btn.png'" />
+			<Button name="aboutlink1" float="true" pos="42,410,300,300" text="@String.Website" height="22" align="center" readonly="true" textcolor="#FF8e8e8e" showcursor="true" hottextcolor="#009de4" disabledtextcolor="#FFA7A6AA" font="0" />
+        </VerticalLayout>
+    </VerticalLayout>
+</Window>

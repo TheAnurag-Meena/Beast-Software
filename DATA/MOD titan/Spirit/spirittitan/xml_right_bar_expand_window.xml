@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="16,362" mininfo="16,362" layeredimage="file=&apos;gaga\right_toolbar_expand.png&apos; scale9=&apos;1,238,8,12&apos;" >
+    <Font name="微软雅黑" size="10" bold="false" italic="false" />
+    <HorizontalLayout name="mainrightbar2" bkcolor="#FF14181F">
+        <VerticalLayout name="rightbar_show" width="16">
+            <Control height="125"/>
+               <Button name="HideToolbarBtn" tooltip="@UI.Tooltip.HideRightbar" width="16" height="112" align="center" normalimage="file=&apos;gaga\rightdrawer_arrow_collect.png&apos; source=&apos;0,0,16,16&apos; mask=&apos;0xffff00ff&apos; dest=&apos;0,48,16,64&apos;" hotimage="file=&apos;gaga\rightdrawer_arrow_collect.png&apos; source=&apos;16,0,32,16&apos; mask=&apos;0xffff00ff&apos; dest=&apos;0,48,16,64&apos;" pushedimage="file=&apos;gaga\rightdrawer_arrow_collect.png&apos; source=&apos;32,0,48,16&apos; mask=&apos;0xffff00ff&apos; dest=&apos;0,48,16,64&apos;" />
+               <Button visible="false" name="ShowToolbarBtn" tooltip="@UI.Tooltip.ShowRightbar" width="16" height="112" align="center" normalimage="file=&apos;gaga\rightdrawer_arrow_normal.png&apos; source=&apos;0,0,16,16&apos; mask=&apos;0xffff00ff&apos; dest=&apos;0,48,16,64&apos;" hotimage="file=&apos;gaga\rightdrawer_arrow_normal.png&apos; source=&apos;16,0,32,16&apos; mask=&apos;0xffff00ff&apos; dest=&apos;0,48,16,64&apos;" pushedimage="file=&apos;gaga\rightdrawer_arrow_normal.png&apos; source=&apos;32,0,48,16&apos; mask=&apos;0xffff00ff&apos; dest=&apos;0,48,16,64&apos;" />
+               <Control height="125"/>
+        </VerticalLayout>
+  </HorizontalLayout>
+</Window>

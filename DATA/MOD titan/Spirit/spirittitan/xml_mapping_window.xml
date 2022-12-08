@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="260,650" caption="0,0,0,40" bktrans="true" bktrans="true"  >
+  <Default name="VScrollBar" value="button1normalimage=&quot;file=&apos;gaga/ScrollBar_up.png&apos; &quot; button1hotimage=&quot;file=&apos;gaga/ScrollBar_up.png&apos; &quot; button1pushedimage=&quot;file=&apos;gaga/ScrollBar_up.png&apos; &quot; button1disabledimage=&quot;file=&apos;gaga/ScrollBar_up.png&apos; &quot; button2normalimage=&quot;file=&apos;gaga/ScrollBar_down.png&apos; &quot; button2hotimage=&quot;file=&apos;gaga/ScrollBar_down.png&apos; &quot; button2pushedimage=&quot;file=&apos;gaga/ScrollBar_down.png&apos; &quot; button2disabledimage=&quot;file=&apos;gaga/ScrollBar_down.png&apos; &quot; thumbnormalimage=&quot;file=&apos;gaga/sliding_block.png&apos; source=&apos;0,10,4,20&apos; &quot; thumbhotimage=&quot;file=&apos;gaga/sliding_block.png&apos; source=&apos;0,10,4,20&apos;&quot; thumbpushedimage=&quot;ffile=&apos;gaga/sliding_block.png&apos; source=&apos;0,10,4,20&apos;&quot; thumbdisabledimage=&quot;file=&apos;gaga/sliding_block.png&apos; corner=&apos;2,2,2,2&apos; source=&apos;0,10,4,20&apos;&quot;" />
+  <Font id="0" name="微软雅黑" size="10" bold="false" italic="false" />
+  <Font id="1" name="微软雅黑" size="12" bold="false" italic="false" />
+  <Font id="2" name="微软雅黑" size="14" bold="false" italic="false" />
+  <Font id="3" name="微软雅黑" size="16" bold="false" italic="false" />
+  <TabLayout name="advancesettingtab" >
+    <VerticalLayout name="editToolsContainer" width="260" bkcolor="#FF16171F">
+      <HorizontalLayout height="35">
+        <Control />
+        <Button name="recoverbtn" tooltip="@UI.Tooltip.CloseKeyboardSettings" padding="0,4,0,2" width="28" height="28" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;gaga/mapping_back_btn.png&apos; source=&apos;0,0,28,28&apos; corner=&apos;4,4,4,4&apos; mask=&apos;0xffff00ff&apos;" hotimage="file=&apos;gaga/mapping_back_btn.png&apos; source=&apos;28,0,56,28&apos; corner=&apos;4,4,4,4&apos; mask=&apos;0xffff00ff&apos;" pushedimage="file=&apos;gaga/mapping_back_btn.png&apos; source=&apos;56,0,84,28&apos; corner=&apos;4,4,4,4&apos; mask=&apos;0xffff00ff&apos;" />
+      </HorizontalLayout>
+      <HorizontalLayout>
+        <VerticalLayout vscrollbar="true" hscrollbar="true">
+          <HorizontalLayout height="21">
+            <Button name="operatekeyboardmodebtn" tooltip="1" float="true" pos="135,2,0,0" width="28" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;gaga/mapping_small_switch_off.png&apos; source=&apos;0,0,28,16&apos; corner=&apos;4,4,4,4&apos; mask=&apos;0xffff00ff&apos;" hotimage="file=&apos;gaga/mapping_small_switch_off.png&apos; source=&apos;28,0,56,16&apos; corner=&apos;4,4,4,4&apos; mask=&apos;0xffff00ff&apos;" pushedimage="file=&apos;gaga/mapping_small_switch_off.png&apos; source=&apos;56,0,84,16&apos; corner=&apos;4,4,4,4&apos; mask=&apos;0xffff00ff&apos;" visible="false" /> 
+            <Button name="operatejoystickmodebtn" tooltip="2" float="true" pos="135,2,0,0" width="28" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;gaga/mapping_small_switch_on.png&apos; source=&apos;0,0,28,16&apos; corner=&apos;4,4,4,4&apos; mask=&apos;0xffff00ff&apos;" hotimage="file=&apos;gaga/mapping_small_switch_on.png&apos; source=&apos;28,0,56,16&apos; corner=&apos;4,4,4,4&apos; mask=&apos;0xffff00ff&apos;" pushedimage="file=&apos;gaga/mapping_small_switch_on.png&apos; source=&apos;56,0,84,16&apos; corner=&apos;4,4,4,4&apos; mask=&apos;0xffff00ff&apos;" visible="true"/>
+            <Label name="operatormodelabel" text="@UI.GamepadMapping" padding="24,3,0,0" width="120" height="14" textcolor="0xFFFFFFFF"  font="0"/>  
+            <Label name="connectlabel" text="@UI.Disonnected" height="14" width="120" padding="30,3,0,0" textcolor="0xFFFFFFFF" font="0"/>
+          </HorizontalLayout>
+      <HorizontalLayout name="modecomhl" height="30" padding="0,20,0,0">
+        <Label text="@UI.MappingMode" font="0" width="120" height="28" textpadding="24,0,0,0" textcolor="#00FFFFFF" disabledtextcolor="#FFA7A6AA" font="0"  />
+        <Combo name="modecombo" padding="2,0,0,0" width="115" height="28" itemtextpadding="8,0,0,0" itemtextcolor="#FFb5b4b4" itemselectedtextcolor="#FFFFFFFF" itemselectedbkcolor="#FFC1E3FF" itemhottextcolor="#FFFFFFFF" itemhotbkcolor="#FFE9F5FF" itemdisabledtextcolor="#FFCCCCCC" itemdisabledbkcolor="#FFFFFFFF" itembkimage="file=&apos;combo_itemback.png&apos; source=&apos;0,0,24,24&apos; corner=&apos;4,4,4,4&apos;" itemselectedimage="file=&apos;combo_itemback.png&apos; source=&apos;24,0,48,24&apos; corner=&apos;4,4,4,4&apos;" itemhotimage="file=&apos;combo_itemback.png&apos; source=&apos;24,0,48,24&apos; corner=&apos;4,4,4,4&apos;" normalimage="file=&apos;combo_background.png&apos; source=&apos;0,0,34,28&apos; corner=&apos;4,4,29,4&apos;" hotimage="file=&apos;combo_background.png&apos; source=&apos;34,0,68,28&apos; corner=&apos;4,4,29,4&apos;" pushedimage="file=&apos;combo_background.png&apos; source=&apos;68,0,102,28&apos; corner=&apos;4,4,29,4&apos;" disabledimage="file=&apos;combo_background.png&apos; source=&apos;102,0,136,28&apos; corner=&apos;4,4,29,4&apos;" dropboxsize="0,140" />   
+      </HorizontalLayout>
+      <VerticalLayout name="VLAddfile" borderround="4,4" height="80" bordersize="1" bordercolor="#FF4A4A4E" padding="24,0,23,0" borderround="2,2" visible="false">
+       <VerticalLayout name="HLAddfile" height="50"  vscrollbar="true" hscrollBar="true" share="true" >
+         <HorizontalLayout name="HLAddfile0" height="30" padding="0,10,0,0">
+           <Option name="selectfilebtn" padding="9,0,0,0" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;gaga/mapping_list_selected.png&apos; source=&apos;0,0,16,16&apos; corner=&apos;4,4,4,4&apos; mask=&apos;0xffff00ff&apos;" hotimage="file=&apos;gaga/mapping_list_selected.png&apos; source=&apos;16,0,32,16&apos; corner=&apos;4,4,4,4&apos; mask=&apos;0xffff00ff&apos;"  hottextcolor="#FF386382" selectedimage="file=&apos;gaga/mapping_list_selected.png&apos; source=&apos;32,0,48,16&apos; corner=&apos;4,4,4,4&apos; mask=&apos;0xffff00ff&apos;" selectedhotimage="file=&apos;gaga/mapping_list_selected.png&apos; source=&apos;32,0,48,16&apos; mask=&apos;0xffff00ff&apos;"/>
+           <Edit name="keyboardsetedit" text="Default" font="0" padding="9,0,0,0" width="70" height="18" textcolor="#FFFFFFFF" disabledtextcolor="#FFFFFFFF" enabled="false"   align="left" bkcolor="#FF16171F" endellipsis="true"/>
+           <Button name="editnamebtn" width="12" height="12" padding="40,4,0,0"  textcolor="#FFA5ABB2" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;gaga/mapping_list_edit_btn.png&apos; source=&apos;0,0,12,12&apos; mask=&apos;0xffff00ff&apos;" hotimage="file=&apos;gaga/mapping_list_edit_btn.png&apos; source=&apos;12,0,24,12&apos; mask=&apos;0xffff00ff&apos;" pushedimage="file=&apos;gaga/mapping_list_edit_btn.png&apos; source=&apos;24,0,36,12&apos; mask=&apos;0xffff00ff&apos;" />
+           <Button name="removefilebtn" width="12" height="12" padding="8,4,0,0" textcolor="#FF00BAFF" hottextcolor="#FF38C9ff" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;gaga/mapping_list_remove_btn.png&apos; source=&apos;0,0,12,12&apos; mask=&apos;0xffff00ff&apos;" hotimage="file=&apos;gaga/mapping_list_remove_btn.png&apos; source=&apos;12,0,24,12&apos; mask=&apos;0xffff00ff&apos;" pushedimage="file=&apos;gaga/mapping_list_remove_btn.png&apos; source=&apos;24,0,36,12&apos; mask=&apos;0xffff00ff&apos;" />
+           <Button name="copyfilebtn" padding="8,4,0,0"  visible="true" width="12" height="12" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;gaga/mapping_list_copy_btn.png&apos; source=&apos;0,0,12,12&apos; mask=&apos;0xffff00ff&apos;" hotimage="file=&apos;gaga/mapping_list_copy_btn.png&apos; source=&apos;12,0,24,12&apos; mask=&apos;0xffff00ff&apos;" pushedimage="file=&apos;gaga/mapping_list_copy_btn.png&apos; source=&apos;24,0,36,12&apos; mask=&apos;0xffff00ff&apos;" />
+         </HorizontalLayout>
+        </VerticalLayout>
+        <Button name="addfileBtn" width="18" height="18" padding="107,10,0,0"  textcolor="#FFA5ABB2" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file='gaga\mapping_addfile.png'" hotimage="file='gaga\mapping_addfile.png'" pushedimage="file='gaga\mapping_addfile.png'" />  
+      </VerticalLayout>
+      <Control name="keyboardcontrol" height="35"/> 
+      <HorizontalLayout height="16">
+          <Label text="@UI.ClickToCreate" width="220" textcolor="#00FFFFFF" mouse="false" font="0" textpadding="24,0,10,0" />
+          <Control />
+      </HorizontalLayout>
+      <TabLayout name="mappingIconsTab" height="200" >
+          <VerticalLayout name="keyboardMappingIcons">
+              <HorizontalLayout name="keyboardhl1" height="100">
+                  <VerticalLayout name="keyboardPointvl" width="85">
+                      <Button name="keyboardPointBtn" tooltip="@UI.Tooltip.SimpleKey" width="50" height="52" padding="20,12,0,0" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;gaga/mapping_icon_click.png&apos; source=&apos;0,0,50,52&apos; mask=&apos;0xffff00ff&apos;" hotimage="file=&apos;gaga/mapping_icon_click.png&apos; source=&apos;50,0,100,52&apos; mask=&apos;0xffff00ff&apos;" pushedimage="file=&apos;gaga/mapping_icon_click.png&apos; source=&apos;100,0,150,52&apos; mask=&apos;0xffff00ff&apos;" />
+                      <Label name="keyboardPointlabel" text="@UI.SimpleKey" height="20" width="100" padding="10,6,0,0" textcolor="#00FFFFFF" disabledtextcolor="#FFA7A6AA" align="center" font="0" />
+                  </VerticalLayout>
+                  <VerticalLayout name="keyboardDiscvl" width="85">
+                      <Button name="keyboardDiscBtn" tooltip="@UI.Tooltip.WASD" width="50" height="52" padding="20,12,0,0"  textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;gaga/mapping_icon_keyboarddisc.png&apos; source=&apos;0,0,50,52&apos; mask=&apos;0xffff00ff&apos;" hotimage="file=&apos;gaga/mapping_icon_keyboarddisc.png&apos; source=&apos;50,0,100,52&apos; mask=&apos;0xffff00ff&apos;" pushedimage="file=&apos;gaga/mapping_icon_keyboarddisc.png&apos; source=&apos;100,0,150,52&apos; mask=&apos;0xffff00ff&apos;" />
+                      <Label name="keyboardDisclabel" text="@UI.WASD" height="20" width="100" padding="10,6,0,0"   textcolor="#00FFFFFF" disabledtextcolor="#FFA7A6AA" align="center" font="0" />
+                  </VerticalLayout>
+                  <VerticalLayout name="mouseDiscvl" width="85">
+                      <Button name="mouseDiscBtn" tooltip="@UI.Tooltip.ShootView" width="50" height="52" padding="20,12,0,0" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;gaga/mapping_icon_shoot-view.png&apos; source=&apos;0,0,50,52&apos; mask=&apos;0xffff00ff&apos;" hotimage="file=&apos;gaga/mapping_icon_shoot-view.png&apos; source=&apos;50,0,100,52&apos; mask=&apos;0xffff00ff&apos;" pushedimage="file=&apos;gaga/mapping_icon_shoot-view.png&apos; source=&apos;100,0,150,52&apos; mask=&apos;0xffff00ff&apos;" />
+                      <Label name="mouseDisclabel" text="@UI.ShootView" height="20" width="100" padding="10,6,0,0" textcolor="#00FFFFFF" disabledtextcolor="#FFA7A6AA" align="center" font="0" />
+                  </VerticalLayout>
+              </HorizontalLayout>
+              <Control />
+              <HorizontalLayout name="keyboardhl2" height="100">
+                  <VerticalLayout name="mouseTriggervl" width="85">
+                      <Button name="mouseTriggerBtn" tooltip="@UI.Tooltip.ShootTrigger" width="50" height="52" padding="20,12,0,0" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;gaga/mapping_icon_shoottrigger.png&apos; source=&apos;0,0,50,52&apos; mask=&apos;0xffff00ff&apos;" hotimage="file=&apos;gaga/mapping_icon_shoottrigger.png&apos; source=&apos;50,0,100,52&apos; mask=&apos;0xffff00ff&apos;" pushedimage="file=&apos;gaga/mapping_icon_shoottrigger.png&apos; source=&apos;100,0,150,52&apos; mask=&apos;0xffff00ff&apos;" />
+                      <Label name="mouseTriggerlabel" text="@UI.ShootTrigger" height="20" width="110" padding="10,6,0,0" textcolor="#00FFFFFF" disabledtextcolor="#FFA7A6AA" align="center" font="0"/>
+                  </VerticalLayout>
+              </HorizontalLayout>
+          </VerticalLayout>
+          <VerticalLayout name="joystickMappingIcons">
+              <HorizontalLayout height="100">
+                  <VerticalLayout width="85">
+                      <Button name="joystickPointBtn" tooltip="@UI.Tooltip.SimpleKey" width="50" height="52" padding="20,12,0,0" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;gaga/mapping_icon_click.png&apos; source=&apos;0,0,50,52&apos; mask=&apos;0xffff00ff&apos;" hotimage="file=&apos;gaga/mapping_icon_click.png&apos; source=&apos;50,0,100,52&apos; mask=&apos;0xffff00ff&apos;" pushedimage="file=&apos;gaga/mapping_icon_click.png&apos; source=&apos;100,0,150,52&apos; mask=&apos;0xffff00ff&apos;" />
+                      <Label text="@UI.SimpleKey" height="20" width="100" padding="10,6,0,0" textcolor="#00FFFFFF" disabledtextcolor="#FFA7A6AA" align="center" font="0" />
+                  </VerticalLayout>
+              </HorizontalLayout>
+              <HorizontalLayout height="100" visible="false">
+                  <VerticalLayout width="85">
+                      <Button name="joystickDragBtn" tooltip="@UI.Tooltip.JoystickDrag" width="50" height="52" padding="20,12,0,0" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;gaga/mapping_joystickdrag.png&apos; source=&apos;0,0,50,52&apos; mask=&apos;0xffff00ff&apos;" hotimage="file=&apos;gaga/mapping_joystickdrag.png&apos; source=&apos;50,0,100,52&apos; mask=&apos;0xffff00ff&apos;" pushedimage="file=&apos;gaga/mapping_joystickdrag.png&apos; source=&apos;100,0,150,52&apos; mask=&apos;0xffff00ff&apos;" />
+                      <Label text="@UI.JoystickDrag" width="100" height="20" padding="12,6,0,0" textcolor="#00FFFFFF" disabledtextcolor="#FFA7A6AA" align="center" font="0"/>
+                  </VerticalLayout>
+              </HorizontalLayout>
+          </VerticalLayout>
+      </TabLayout>
+      <Control />
+      <HorizontalLayout name="mappingReduceInertiahl" height="20" padding="0,0,0,0">
+          <Option name="mappingReduceInertiaOpt"  padding="10,0,10,0" text="@UI.ShowMappingTips" textpadding="24,0,10,0" multiline="true" textcolor="#00FFFFFF" font="0" disabledtextcolor="#FFA7A6AA" align="left" normalimage="file=&apos;checkbox_unselected.png&apos;  dest=&apos;0,0,18,18&apos; source=&apos;0,0,18,18&apos; corner=&apos;4,4,4,4&apos; mask=&apos;0xffff00ff&apos;" hotimage="file=&apos;checkbox_unselected.png&apos; dest=&apos;0,0,18,18&apos;  source=&apos;18,0,36,18&apos; corner=&apos;4,4,4,4&apos; mask=&apos;0xffff00ff&apos;" hottextcolor="#FFFFFFFF" selectedimage="file=&apos;checkbox_selected.png&apos;  dest=&apos;0,0,18,18&apos; source=&apos;0,0,18,18&apos; corner=&apos;4,4,4,4&apos; mask=&apos;0xffff00ff&apos;" selectedhotimage="file=&apos;checkbox_selected.png&apos; dest=&apos;0,0,18,18&apos;  source=&apos;18,0,36,18&apos; corner=&apos;4,4,4,4&apos; mask=&apos;0xffff00ff&apos;" normalimage="file=&apos;checkbox_unselected.png&apos;  dest=&apos;0,0,18,18&apos; source=&apos;0,0,18,18&apos;" hotimage="file=&apos;checkbox_unselected.png&apos; dest=&apos;0,0,18,18&apos;  source=&apos;18,0,36,18&apos;" hottextcolor="#FFFFFFFF" selectedimage="file=&apos;checkbox_selected.png&apos;  dest=&apos;0,0,18,18&apos; source=&apos;0,0,18,18&apos;" selectedhotimage="file=&apos;checkbox_selected.png&apos; dest=&apos;0,0,18,18&apos;  source=&apos;18,0,36,18&apos;" normalEnlargeImage="file=&apos;checkbox_unselected_enlarge.png&apos;  dest=&apos;0,0,27,27&apos; source=&apos;0,0,27,27&apos;" hotEnlargeImage="file=&apos;checkbox_unselected_enlarge.png&apos; dest=&apos;0,0,27,27&apos;  source=&apos;27,0,54,27&apos;" hottextcolor="#FFFFFFFF" selectedEnlargeImage="file=&apos;checkbox_selected_enlarge.png&apos;  dest=&apos;0,0,27,27&apos; source=&apos;0,0,27,27&apos;" selectedhotEnlargeImage="file=&apos;checkbox_selected_enlarge.png&apos; dest=&apos;0,0,27,27&apos;  source=&apos;27,0,54,27&apos;"/>
+      </HorizontalLayout>
+      <HorizontalLayout name="mappingShowHintshl" height="20" padding="0,10,0,0">
+          <Option name="mappingShowHintsOpt" padding="10,0,10,0" text="@UI.ShowMappingTipsWhenStart" textpadding="24,0,10,0" multiline="true" textcolor="#00FFFFFF" font="0" disabledtextcolor="#FFA7A6AA" align="left" normalimage="file=&apos;checkbox_unselected.png&apos;  dest=&apos;0,0,18,18&apos; source=&apos;0,0,18,18&apos; corner=&apos;4,4,4,4&apos; mask=&apos;0xffff00ff&apos;" hotimage="file=&apos;checkbox_unselected.png&apos; dest=&apos;0,0,18,18&apos;  source=&apos;18,0,36,18&apos; corner=&apos;4,4,4,4&apos; mask=&apos;0xffff00ff&apos;" hottextcolor="#FFFFFFFF" selectedimage="file=&apos;checkbox_selected.png&apos;  dest=&apos;0,0,18,18&apos; source=&apos;0,0,18,18&apos; corner=&apos;4,4,4,4&apos; mask=&apos;0xffff00ff&apos;" selectedhotimage="file=&apos;checkbox_selected.png&apos; dest=&apos;0,0,18,18&apos;  source=&apos;18,0,36,18&apos; corner=&apos;4,4,4,4&apos; mask=&apos;0xffff00ff&apos;" normalimage="file=&apos;checkbox_unselected.png&apos;  dest=&apos;0,0,18,18&apos; source=&apos;0,0,18,18&apos;" hotimage="file=&apos;checkbox_unselected.png&apos; dest=&apos;0,0,18,18&apos;  source=&apos;18,0,36,18&apos;" hottextcolor="#FFFFFFFF" selectedimage="file=&apos;checkbox_selected.png&apos;  dest=&apos;0,0,18,18&apos; source=&apos;0,0,18,18&apos;" selectedhotimage="file=&apos;checkbox_selected.png&apos; dest=&apos;0,0,18,18&apos;  source=&apos;18,0,36,18&apos;" normalEnlargeImage="file=&apos;checkbox_unselected_enlarge.png&apos;  dest=&apos;0,0,27,27&apos; source=&apos;0,0,27,27&apos;" hotEnlargeImage="file=&apos;checkbox_unselected_enlarge.png&apos; dest=&apos;0,0,27,27&apos;  source=&apos;27,0,54,27&apos;" hottextcolor="#FFFFFFFF" selectedEnlargeImage="file=&apos;checkbox_selected_enlarge.png&apos;  dest=&apos;0,0,27,27&apos; source=&apos;0,0,27,27&apos;" selectedhotEnlargeImage="file=&apos;checkbox_selected_enlarge.png&apos; dest=&apos;0,0,27,27&apos;  source=&apos;27,0,54,27&apos;"/>
+      </HorizontalLayout>
+      <HorizontalLayout name="mappingAutoSwitchToSmartModehl" height="20" padding="0,10,0,0">
+          <Option name="mappingAutoSwitchToSmartModeOpt" padding="10,0,10,0" text="@UI.AutoSwitchToSmartMode" textpadding="24,0,10,0" multiline="true" textcolor="#00FFFFFF" font="0" disabledtextcolor="#FFA7A6AA" align="left" normalimage="file=&apos;checkbox_unselected.png&apos;  dest=&apos;0,0,18,18&apos; source=&apos;0,0,18,18&apos; corner=&apos;4,4,4,4&apos; mask=&apos;0xffff00ff&apos;" hotimage="file=&apos;checkbox_unselected.png&apos; dest=&apos;0,0,18,18&apos;  source=&apos;18,0,36,18&apos; corner=&apos;4,4,4,4&apos; mask=&apos;0xffff00ff&apos;" hottextcolor="#FFFFFFFF" selectedimage="file=&apos;checkbox_selected.png&apos;  dest=&apos;0,0,18,18&apos; source=&apos;0,0,18,18&apos; corner=&apos;4,4,4,4&apos; mask=&apos;0xffff00ff&apos;" selectedhotimage="file=&apos;checkbox_selected.png&apos; dest=&apos;0,0,18,18&apos;  source=&apos;18,0,36,18&apos; corner=&apos;4,4,4,4&apos; mask=&apos;0xffff00ff&apos;" normalimage="file=&apos;checkbox_unselected.png&apos;  dest=&apos;0,0,18,18&apos; source=&apos;0,0,18,18&apos;" hotimage="file=&apos;checkbox_unselected.png&apos; dest=&apos;0,0,18,18&apos;  source=&apos;18,0,36,18&apos;" hottextcolor="#FFFFFFFF" selectedimage="file=&apos;checkbox_selected.png&apos;  dest=&apos;0,0,18,18&apos; source=&apos;0,0,18,18&apos;" selectedhotimage="file=&apos;checkbox_selected.png&apos; dest=&apos;0,0,18,18&apos;  source=&apos;18,0,36,18&apos;" normalEnlargeImage="file=&apos;checkbox_unselected_enlarge.png&apos;  dest=&apos;0,0,27,27&apos; source=&apos;0,0,27,27&apos;" hotEnlargeImage="file=&apos;checkbox_unselected_enlarge.png&apos; dest=&apos;0,0,27,27&apos;  source=&apos;27,0,54,27&apos;" hottextcolor="#FFFFFFFF" selectedEnlargeImage="file=&apos;checkbox_selected_enlarge.png&apos;  dest=&apos;0,0,27,27&apos; source=&apos;0,0,27,27&apos;" selectedhotEnlargeImage="file=&apos;checkbox_selected_enlarge.png&apos; dest=&apos;0,0,27,27&apos;  source=&apos;27,0,54,27&apos;"/>
+      </HorizontalLayout>
+      <HorizontalLayout name="mappingCtrlUnlockMousehl" height="40" padding="0,10,0,0">
+          <Option name="mappingCtrlUnlockMouseOpt" padding="10,0,10,0" text="@UI.CtrlToUnlockMouse" textpadding="24,0,10,0" multiline="true" textcolor="#00FFFFFF" font="0" disabledtextcolor="#FFA7A6AA" align="left" normalimage="file=&apos;checkbox_unselected.png&apos;  dest=&apos;0,0,18,18&apos; source=&apos;0,0,18,18&apos; corner=&apos;4,4,4,4&apos; mask=&apos;0xffff00ff&apos;" hotimage="file=&apos;checkbox_unselected.png&apos; dest=&apos;0,0,18,18&apos;  source=&apos;18,0,36,18&apos; corner=&apos;4,4,4,4&apos; mask=&apos;0xffff00ff&apos;" hottextcolor="#FFFFFFFF" selectedimage="file=&apos;checkbox_selected.png&apos;  dest=&apos;0,0,18,18&apos; source=&apos;0,0,18,18&apos; corner=&apos;4,4,4,4&apos; mask=&apos;0xffff00ff&apos;" selectedhotimage="file=&apos;checkbox_selected.png&apos; dest=&apos;0,0,18,18&apos;  source=&apos;18,0,36,18&apos; corner=&apos;4,4,4,4&apos; mask=&apos;0xffff00ff&apos;" normalimage="file=&apos;checkbox_unselected.png&apos;  dest=&apos;0,0,18,18&apos; source=&apos;0,0,18,18&apos;" hotimage="file=&apos;checkbox_unselected.png&apos; dest=&apos;0,0,18,18&apos;  source=&apos;18,0,36,18&apos;" hottextcolor="#FFFFFFFF" selectedimage="file=&apos;checkbox_selected.png&apos;  dest=&apos;0,0,18,18&apos; source=&apos;0,0,18,18&apos;" selectedhotimage="file=&apos;checkbox_selected.png&apos; dest=&apos;0,0,18,18&apos;  source=&apos;18,0,36,18&apos;" normalEnlargeImage="file=&apos;checkbox_unselected_enlarge.png&apos;  dest=&apos;0,0,27,27&apos; source=&apos;0,0,27,27&apos;" hotEnlargeImage="file=&apos;checkbox_unselected_enlarge.png&apos; dest=&apos;0,0,27,27&apos;  source=&apos;27,0,54,27&apos;" hottextcolor="#FFFFFFFF" selectedEnlargeImage="file=&apos;checkbox_selected_enlarge.png&apos;  dest=&apos;0,0,27,27&apos; source=&apos;0,0,27,27&apos;" selectedhotEnlargeImage="file=&apos;checkbox_selected_enlarge.png&apos; dest=&apos;0,0,27,27&apos;  source=&apos;27,0,54,27&apos;"/>
+      </HorizontalLayout>
+      <HorizontalLayout height="40" padding="0,10,0,0">
+          <Label name="infolabel" textcolor="FFFFFFFF" font="1" textpadding="10,0,10,0" text="@UI.RightClickEditKey" multiline="true"/>
+      </HorizontalLayout>
+      <Control />
+        </VerticalLayout>
+      </HorizontalLayout>
+      <HorizontalLayout name="mapping_buttoon_hl" height="50" width="260" >
+          <Control width="25"/>
+          <Button name="restoreBtn" text="@UI.Button.MappingRestore" font="0" height="30" width="90" padding="0,10,0,0" textpadding="15,0,15,0" textcolor="#FFFFFFFF" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file='gaga\cancel_normal_btn.png'" hotimage="file='gaga\cancel_light_btn.png'" pushedimage="file='gaga\cancel_pressed_btn'" />
+          <Control width="20"/>
+          <Button name="saveBtn" text="@UI.Button.MappingSave" font="0" height="30" width="90" padding="0,10,0,0" textpadding="15,0,15,0" textcolor="#FFFFFFFF" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file='gaga\save_normal_btn.png'" hotimage="file='gaga\save_light_btn.png'" pushedimage="file='gaga\save_pressed_btn.png'"/>
+          <Control />
+      </HorizontalLayout>
+    </VerticalLayout>
+    <VerticalLayout name="advancesettingvl" width="260" bkcolor="#FF16171F">
+     <HorizontalLayout name="tophl" height="36" bkcolor="#FF242633">
+        <Text name="" text="@UI.KeyboardSetting.KeyProperties" font="1" padding="20,10,0,0" textcolor="#FFFFFFFF" />
+        <Button name="recoverbtn" tooltip="@UI.Tooltip.CloseKeyboardSettings" padding="0,4,0,2" width="28" height="28" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;gaga/mapping_back_btn.png&apos; source=&apos;0,0,28,28&apos; corner=&apos;4,4,4,4&apos; mask=&apos;0xffff00ff&apos;" hotimage="file=&apos;gaga/mapping_back_btn.png&apos; source=&apos;28,0,56,28&apos; corner=&apos;4,4,4,4&apos; mask=&apos;0xffff00ff&apos;" pushedimage="file=&apos;gaga/mapping_back_btn.png&apos; source=&apos;56,0,84,28&apos; corner=&apos;4,4,4,4&apos; mask=&apos;0xffff00ff&apos;" />
+     </HorizontalLayout>
+     <HorizontalLayout>
+       <VerticalLayout name="settingvl" vscrollbar="true" hscrollbar="true" scrollstepsize="4" scrollselect="true" >
+          <HorizontalLayout name="baseicsettinghl">
+            <Label name="" text="@UI.KeyboardSetting.KeyBasicProperties" float="true" pos="20,0,250,30" textcolor="#FF006EFF" font="2" showhtml="true" bkimage="file='gaga/creating_schedule.png' source='20,0,40,2' dest='0,28,220,30'"/>
+            <List name="listbasic" padding="20,15,0,0" header="false" itemalign="center" hscrollbar="false" menu="true">
+               <ListHeader sepimm="false">
+                <ListHeaderItemEx name="" text="" textpadding="2,5,0,0" minwidth="52" font="1" width="146" align="center" valign="center" />
+                <ListHeaderItemEx name="" text="" textpadding="2,5,0,0" minwidth="64" font="1" width="73" align="center" valign="center" />
+               </ListHeader>
+            </List>
+         </HorizontalLayout>
+         <HorizontalLayout name="advancesettinghl" padding="0,20,0,0">
+            <Label name="" text="@UI.KeyboardSetting.KeyAdvanceProperties" float="true"  pos="20,0,250,30" textcolor="#FF006EFF" font="2" showhtml="true" bkimage="file='gaga/creating_schedule.png' source='20,0,40,2' dest='0,28,220,30'" />
+            <List name="listadvance" padding="20,15,0,0" header="false" itemalign="center" hscrollbar="false" menu="true">
+              <ListHeader sepimm="false">
+                <ListHeaderItemEx text="" minwidth="52" textpadding="2,5,0,0" font="1" width="146" align="center" valign="center" />
+                <ListHeaderItemEx text="" minwidth="64" textpadding="2,5,0,0" font="1" width="73" align="center" valign="center" />
+              </ListHeader>
+            </List>
+         </HorizontalLayout>
+         <Control />
+       </VerticalLayout>
+    </HorizontalLayout>
+     <HorizontalLayout name="mapping_buttoon_hl" height="50" width="260">
+          <Control width="25"/>
+          <Button name="restoreBtn" text="@UI.Button.MappingRestore" font="0" height="30" width="90" padding="0,10,0,0" textpadding="15,0,15,0" textcolor="#FFFFFFFF" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file='gaga\delete_normal_btn.png'" hotimage="file='gaga\delete_light_btn.png'" pushedimage="file='gaga\delete_press_btn.png'" />
+          <Control width="20"/>
+          <Button name="saveBtn" text="@UI.Button.MappingSave" font="0" height="30" width="90" padding="0,10,0,0" textpadding="15,0,15,0" textcolor="#FFFFFFFF" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file='gaga\save_normal_btn.png'" hotimage="file='gaga\save_light_btn.png'" pushedimage="file='gaga\save_pressed_btn.png'"/>
+     </HorizontalLayout>
+   </VerticalLayout>
+  </TabLayout>
+  
+</Window>

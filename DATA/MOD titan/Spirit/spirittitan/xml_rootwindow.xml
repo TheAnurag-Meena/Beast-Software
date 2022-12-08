@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="576,1024" sizebox="4,4,4,4" caption="0,0,0,34" layeredimage="file=&apos;gaga\bg9.png&apos; scale9=&apos;36,36,42,42&apos;">
+    <Font name="微软雅黑" size="10" bold="false" italic="false" />
+    <HorizontalLayout name="maincontainer" bkcolor="#FF14181F">
+        <VerticalLayout>
+            <Container name="titlebar" height="36" padding="0,0,0,0" bkcolor="#FF1A1B24">
+                <HorizontalLayout name="logobar">
+                    <Control name="logobar_left"/>
+                    <Control name="titlelogo" width="118" height="20" padding="0,8,0,0" bkimage="gaga\title_logo.png" />
+                    <Control name="logobar_right"/>
+                </HorizontalLayout>
+                <HorizontalLayout name="menubar">
+                    <Control />
+                    <Control name="vLineControlSpaceLeftControl" width="9" />
+                    <Control name="vLineControl" width="1" height="34" bkimage="title_vline.png" />
+                    <Control name="vLineControlSpaceRightControl" width="5" />
+					<Button name="morebtn" tooltip="@UI.Tooltip.Menu" width="24" height="24" padding="0,6,0,0" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;gaga\title_more_btn.png&apos; source=&apos;0,0,24,24&apos; mask=&apos;0xffff00ff&apos;" hotimage="file=&apos;gaga\title_more_btn.png&apos; source=&apos;24,0,48,24&apos;" pushedimage="file=&apos;gaga\title_more_btn.png&apos; source=&apos;48,0,72,24&apos;" />
+					<Control name="MoreBtnRedPoint" width="6" height="6" bkimage="gaga\red_point_1.png" padding="-7,7,0,0" visible="false"/>
+                    <Control visible="false" width="18" height="24" bkimage="file=&apos;title_separator.png&apos; dest=&apos;8,3,9,21&apos;" />
+                    <Button name="minbtn" tooltip="@UI.Tooltip.Minimize" width="24" height="24" padding="6,6,0,0" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;gaga\title_min_btn.png&apos; source=&apos;0,0,24,24&apos; mask=&apos;0xffff00ff&apos;" hotimage="file=&apos;gaga\title_min_btn.png&apos; source=&apos;24,0,48,24&apos;" pushedimage="file=&apos;gaga\title_min_btn.png&apos; source=&apos;48,0,72,24&apos;" />
+                    <Button name="maxbtn" tooltip="@UI.Tooltip.Maximize" width="24" height="24" padding="6,6,0,0" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;gaga\title_max_btn.png&apos; source=&apos;0,0,24,24&apos; mask=&apos;0xffff00ff&apos;" hotimage="file=&apos;gaga\title_max_btn.png&apos; source=&apos;24,0,48,24&apos;" pushedimage="file=&apos;gaga\title_max_btn.png&apos; source=&apos;48,0,72,24&apos;" />
+                    <Button name="restorebtn" tooltip="@UI.Tooltip.Restore" visible="false" width="24" height="24" padding="6,6,0,0" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;gaga\title_restore_btn.png&apos; source=&apos;0,0,24,24&apos; mask=&apos;0xffff00ff&apos;" hotimage="file=&apos;gaga\title_restore_btn.png&apos; source=&apos;24,0,48,24&apos;" pushedimage="file=&apos;gaga\title_restore_btn.png&apos; source=&apos;48,0,72,24&apos;" />
+                    <Button name="closebtn" tooltip="@UI.Tooltip.Close" width="24" height="24" padding="6,6,21,0" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;gaga\title_close_btn.png&apos; source=&apos;0,0,24,24&apos; mask=&apos;0xffff00ff&apos;" hotimage="file=&apos;gaga\title_close_btn.png&apos; source=&apos;24,0,48,24&apos;" pushedimage="file=&apos;gaga\title_close_btn.png&apos; source=&apos;48,0,72,24&apos;" />
+                    <Control width="1" />
+                </HorizontalLayout>
+            </Container>
+            <TabLayout name="bottomtab">
+                <Container name="bottomtabloading">
+                    <HorizontalLayout mouse="false">
+                        <Control mouse="false" />
+                        <Control name="loadingFGImage"  mouse="false" bkimage="file=&apos;gaga/starthtml1.jpg&apos; corner=&apos;4,4,4,4&apos; mask=&apos;0xffff00ff&apos;" visible="true" />
+                        <Control mouse="false" />
+                    </HorizontalLayout>
+                    <VerticalLayout mouse="false">
+                        <Control mouse="false" />
+                        <Control name="loadingBgControl" visible="true" height="100" bkimage="loadingbg.png" mouse="false" visible="false"/>
+                    </VerticalLayout>
+                    <HorizontalLayout mouse="false">
+                        <Control name="progressleftspace" width="5" mouse="false" />
+                        <VerticalLayout mouse="false">
+                            <Control mouse="false" />
+                            <VerticalLayout height="40">
+                                <Control name="loadingProgressBG" float="true" pos="0,0,0,0" width="2000" height="24" bkimage="file=&apos;root_progressback.png&apos; corner=&apos;45,0,46,0&apos; mask=&apos;0xffff00ff&apos;" visible="false" />
+                                <Progress name="loadingprogress" height="6" padding="20,34,20,0" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" foreimage="root_progressfore.png" min="0" max="100" value="0" hor="true" />
+                                <HorizontalLayout float="true" pos="0,0,0,0" width="2000" height="56">
+                                    <Control name="bgPercentImageLeftControl" width="1" />
+                                    <Control name="bgPercentImageControl" width="33" height="28" bkimage="gaga\loading_bg_round.png" visible="false" />
+                                </HorizontalLayout>
+                                <HorizontalLayout float="true" pos="0,0,0,0" width="2000" height="28">
+                                    <Control name="loadingprogressleft" width="1" />
+                                    <Label name="loadingprogresslabel2" text="0%" width="38" height="24" textcolor="#00FFFFFF" disabledtextcolor="#FFA7A6AA" font="1" showhtml="true" align="center" />
+                                </HorizontalLayout>
+                            </VerticalLayout>
+                            <Control height="12" />
+                        </VerticalLayout>
+                        <Control name="progressrightspace" width="5" mouse="false" />
+                    </HorizontalLayout>
+                </Container>
+                <VerticalLayout name="bottomtabready">
+                    <Control height="1" bkcolor="#FF28303E" />
+                    <HorizontalLayout>
+                        <Control width="2" bkcolor="#FF28303E" />
+                        <Control />
+                        <Control width="2" bkcolor="#FF28303E" />
+                    </HorizontalLayout>
+                </VerticalLayout>
+                <HorizontalLayout name="bottomtabhorizontal">
+                    <VerticalLayout width="2">
+                        <Control height="1" bkcolor="#FF28303E" />
+                        <HorizontalLayout>
+                            <Control width="2" bkcolor="#FF28303E" />
+                            <Control />
+                            <Control width="2" bkcolor="#FF28303E" />
+                        </HorizontalLayout>
+                        <Control height="2" bkcolor="#FF28303E" />
+                    </VerticalLayout>
+                </HorizontalLayout>
+            </TabLayout>
+            <HorizontalLayout name ="bottombar" visible="true" height="36">
+                <Control />
+                <Button name="androidback" tooltip="@UI.Tooltip.AndroidBack" width="36" height="36" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;gaga\statusbar_back_btn.png&apos; source=&apos;0,0,36,36&apos; mask=&apos;0xffff00ff&apos;" hotimage="file=&apos;gaga\statusbar_back_btn.png&apos; source=&apos;36,0,72,36&apos; mask=&apos;0xffff00ff&apos;" pushedimage="file=&apos;gaga\statusbar_back_btn.png&apos; source=&apos;72,0,108,36&apos; mask=&apos;0xffff00ff&apos;" />
+                <Button name="androidhome" tooltip="@UI.Tooltip.AndroidHome" width="36" height="36" padding="68,0,0,0" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;gaga\statusbar_home_btn.png&apos; source=&apos;0,0,36,36&apos; mask=&apos;0xffff00ff&apos;" hotimage="file=&apos;gaga\statusbar_home_btn.png&apos; source=&apos;36,0,72,36&apos; mask=&apos;0xffff00ff&apos;" pushedimage="file=&apos;gaga\statusbar_home_btn.png&apos; source=&apos;72,0,108,36&apos; mask=&apos;0xffff00ff&apos;" />
+                <Button name="androidappswitch" tooltip="@UI.Tooltip.AndroidSwitch" width="36" height="36" padding="68,0,0,0" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;gaga\statusbar_task_btn.png&apos; source=&apos;0,0,36,36&apos; mask=&apos;0xffff00ff&apos;" hotimage="file=&apos;gaga\statusbar_task_btn.png&apos; source=&apos;36,0,72,36&apos; mask=&apos;0xffff00ff&apos;" pushedimage="file=&apos;gaga\statusbar_task_btn.png&apos; source=&apos;72,0,108,36&apos; mask=&apos;0xffff00ff&apos;" />     
+                <Control />
+            </HorizontalLayout>
+        </VerticalLayout>
+        <Control name="rightBarHLine" visible="false" float="true" pos="0,0,0,0" width="1" bkcolor="#FF14181F" mouse="false" />
+        <Control name="rightBarHLine2" float="true" pos="0,0,0,0" width="1" bkcolor="#FF14181F" mouse="false" />
+        <Control name="borderLine" float="true" pos="0,0,0,0" width="1" height="1" bkimage="file=&apos;rootwindows_bg.png&apos; corner=&apos;4,4,4,4&apos; mask=&apos;0xffff00ff&apos;" mouse="false" />
+        <Button name="gameDownloadBtn" visible="false" float="true" pos="0,0,0,0" width="366" height="100" align="center" />
+    </HorizontalLayout>
+</Window>

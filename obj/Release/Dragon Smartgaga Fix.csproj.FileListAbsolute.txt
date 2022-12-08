@@ -1,0 +1,9 @@
+J:\Smartgaga Fix Tool Dragon\bin\Release\Dragon Smartgaga.exe.config
+J:\Smartgaga Fix Tool Dragon\bin\Release\Dragon Smartgaga.exe
+J:\Smartgaga Fix Tool Dragon\bin\Release\Dragon Smartgaga.pdb
+J:\Smartgaga Fix Tool Dragon\obj\Release\Dragon_Smartgaga_Fix.Form1.resources
+J:\Smartgaga Fix Tool Dragon\obj\Release\Dragon_Smartgaga_Fix.Properties.Resources.resources
+J:\Smartgaga Fix Tool Dragon\obj\Release\Dragon Smartgaga Fix.csproj.GenerateResource.cache
+J:\Smartgaga Fix Tool Dragon\obj\Release\Dragon Smartgaga Fix.csproj.CoreCompileInputs.cache
+J:\Smartgaga Fix Tool Dragon\obj\Release\Dragon Smartgaga.exe
+J:\Smartgaga Fix Tool Dragon\obj\Release\Dragon Smartgaga.pdb

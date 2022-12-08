@@ -1,0 +1,21 @@
+J:\Smartgaga Fix Tool Dragon\bin\Debug\Dragon Smartgaga.exe.config
+J:\Smartgaga Fix Tool Dragon\bin\Debug\Dragon Smartgaga.exe
+J:\Smartgaga Fix Tool Dragon\bin\Debug\Dragon Smartgaga.pdb
+J:\Smartgaga Fix Tool Dragon\obj\Debug\Dragon Smartgaga Fix.csprojAssemblyReference.cache
+J:\Smartgaga Fix Tool Dragon\obj\Debug\Dragon_Smartgaga_Fix.Form1.resources
+J:\Smartgaga Fix Tool Dragon\obj\Debug\Dragon_Smartgaga_Fix.Properties.Resources.resources
+J:\Smartgaga Fix Tool Dragon\obj\Debug\Dragon Smartgaga Fix.csproj.GenerateResource.cache
+J:\Smartgaga Fix Tool Dragon\obj\Debug\Dragon Smartgaga Fix.csproj.CoreCompileInputs.cache
+J:\Smartgaga Fix Tool Dragon\obj\Debug\Dragon Smartgaga.exe
+J:\Smartgaga Fix Tool Dragon\obj\Debug\Dragon Smartgaga.pdb
+J:\Smartgaga Fix Tool Beast SB\obj\Debug\Dragon Smartgaga Fix.csprojAssemblyReference.cache
+J:\Smartgaga Fix Tool Beast SB\obj\Debug\Beast_SB.Form1.resources
+J:\Smartgaga Fix Tool Beast SB\obj\Debug\Dragon Smartgaga Fix.csproj.GenerateResource.cache
+J:\Smartgaga Fix Tool Beast SB\bin\Debug\Beast SB.exe.config
+J:\Smartgaga Fix Tool Beast SB\bin\Debug\Beast SB.exe
+J:\Smartgaga Fix Tool Beast SB\bin\Debug\Beast SB.pdb
+J:\Smartgaga Fix Tool Beast SB\obj\Debug\Beast_SB.Properties.Resources.resources
+J:\Smartgaga Fix Tool Beast SB\obj\Debug\Dragon Smartgaga Fix.csproj.CoreCompileInputs.cache
+J:\Smartgaga Fix Tool Beast SB\obj\Debug\Dragon Smartgaga Fix.csproj.CopyComplete
+J:\Smartgaga Fix Tool Beast SB\obj\Debug\Beast SB.exe
+J:\Smartgaga Fix Tool Beast SB\obj\Debug\Beast SB.pdb

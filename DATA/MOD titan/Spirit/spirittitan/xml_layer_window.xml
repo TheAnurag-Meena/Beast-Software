@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="576,1024" mininfo="30,362" layeredimage="" trans="false" layeredopacity="255" >
+    <Font id="0" name="微软雅黑" size="10" bold="false" italic="false" />
+    <Font id="1" name="微软雅黑" size="18" bold="false" italic="false" />
+	<Font id="2" name="微软雅黑" size="16" bold="false" italic="false" />
+	<Font id="3" name="微软雅黑" size="14" bold="false" italic="false" />
+	<Font id="4" name="微软雅黑" size="12" bold="false" italic="false" />
+	<Font id="5" name="微软雅黑" size="10" bold="false" italic="false" />
+    <VerticalLayout >
+        <HorizontalLayout name="rootContainer">
+          <Container >
+          <TransBkContainer name="transferBack" />
+          <Container name="curvesContainer" bkcolor="#7F000000" >
+          </Container>
+          <Container name="mappingsContainer">
+		  <!-- <Control  name="indicator" float="true" width="952" height="332" pos="286,0,1000,1000" bkimage="mapping_mousedisc_indicator.png"/> -->
+          </Container>
+          <VerticalLayout name="previewContainer" visible="false" mouse="false">
+              <HorizontalLayout height="50" mouse="false" bkcolor="#7F000000" childvalign="vcenter">
+                  <Control width="20"/>
+                  <Control mouse="false"/>
+                  <Label text="@mapping_config_name" textcolor="#00FFFFFF" font="0" height="30" textpadding="16,0,8,0" mouse="false"/>
+                  <Button name="configNameMidBtn" width="160" height="30" padding="0,0,0,0" textpadding="10,3,40,3" textcolor="#FFFFFFFF" disabledtextcolor="#FFA7A6AA" align="left" normalimage="file=&apos;mapping_combo_bg.png&apos; source=&apos;0,0,40,30&apos; corner=&apos;4,4,34,4&apos; mask=&apos;0xffff00ff&apos;" hotimage="file=&apos;mapping_combo_bg.png&apos; source=&apos;40,0,80,30&apos; corner=&apos;4,4,34,4&apos; mask=&apos;0xffff00ff&apos;" pushedimage="file=&apos;mapping_combo_bg.png&apos; source=&apos;80,0,120,30&apos; corner=&apos;4,4,34,4&apos; mask=&apos;0xffff00ff&apos;" />
+                  <Label name="configGroupMidLabel" text="@mapping_config_group" textcolor="#00FFFFFF" font="0" height="30" textpadding="16,0,8,0" mouse="false"/>
+                  <Button name="configGroupMidBtn" width="160" height="30" padding="0,0,0,0" textpadding="10,3,30,3" textcolor="#FFFFFFFF" disabledtextcolor="#FFA7A6AA" align="left" normalimage="file=&apos;mapping_combo2_bg.png&apos; source=&apos;0,0,40,30&apos; corner=&apos;4,4,34,4&apos; mask=&apos;0xffff00ff&apos;" hotimage="file=&apos;mapping_combo2_bg.png&apos; source=&apos;40,0,80,30&apos; corner=&apos;4,4,34,4&apos; mask=&apos;0xffff00ff&apos;" pushedimage="file=&apos;mapping_combo2_bg.png&apos; source=&apos;80,0,120,30&apos; corner=&apos;4,4,34,4&apos; mask=&apos;0xffff00ff&apos;" />
+                  <Control name="usageLinkMidIcon" width="18" height="18" bkimage="mapping_usage_icon.png" padding="16,0,0,0"/>
+                  <Button name="usageLinkMidBtn" text="@mapping_usage_link" textpadding="5,0,16,0" showhtml="true" showcursor="true" height="18" textcolor="#0015BAE4" hottextcolor="#0067DAFB" disabledtextcolor="#FFA7A6AA" font="1" />
+                  <Control mouse="false"/>
+                  <Button name="closebtn" width="20" height="20" normalimage="file=&apos;mapping_close.png&apos; source=&apos;0,0,20,20&apos; mask=&apos;0xffff00ff&apos;" hotimage="file=&apos;mapping_close.png&apos; source=&apos;20,0,40,20&apos; mask=&apos;0xffff00ff&apos;" pushedimage="file=&apos;mapping_close.png&apos; source=&apos;40,0,60,20&apos; mask=&apos;0xffff00ff&apos;"/>
+                  <Control mouse="false" width="10"/>
+              </HorizontalLayout>
+          </VerticalLayout>
+          </Container>
+        </HorizontalLayout>
+		<TabLayout name="mappingIconsTab" height="300" visible="false">
+          <VerticalLayout name="keyboardMappingIcons">
+              <HorizontalLayout height="75">
+                  <VerticalLayout width="86">
+                      <Button name="keyboardPointBtn" width="36" height="36" padding="20,12,0,0" readonly="false" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;mapping_icon_keyboardpoint.png&apos; source=&apos;0,0,36,36&apos; mask=&apos;0xffff00ff&apos;" hotimage="file=&apos;mapping_icon_keyboardpoint.png&apos; source=&apos;36,0,72,36&apos; mask=&apos;0xffff00ff&apos;" pushedimage="file=&apos;mapping_icon_keyboardpoint.png&apos; source=&apos;72,0,108,36&apos; mask=&apos;0xffff00ff&apos;" />
+                      <Label text="@mapping_single_point_name" height="32" textcolor="#00FFFFFF" disabledtextcolor="#FFA7A6AA" align="center" />
+                  </VerticalLayout>
+                  <VerticalLayout width="86">
+                      <Button name="keyboardRepeatBtn" width="36" height="36" padding="20,12,0,0" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;mapping_icon_keyboardrepeat.png&apos; source=&apos;0,0,36,36&apos; mask=&apos;0xffff00ff&apos;" hotimage="file=&apos;mapping_icon_keyboardrepeat.png&apos; source=&apos;36,0,72,36&apos; mask=&apos;0xffff00ff&apos;" pushedimage="file=&apos;mapping_icon_keyboardrepeat.png&apos; source=&apos;72,0,108,36&apos; mask=&apos;0xffff00ff&apos;"/>
+                      <Label text="@mapping_repeat_point_name" height="32" textcolor="#00FFFFFF" disabledtextcolor="#FFA7A6AA" align="center" />
+                  </VerticalLayout>
+                  <VerticalLayout width="86">
+                      <Button name="keyboardDiscBtn" width="36" height="36" padding="20,12,0,0" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;mapping_icon_keyboarddisc.png&apos; source=&apos;0,0,36,36&apos; mask=&apos;0xffff00ff&apos;" hotimage="file=&apos;mapping_icon_keyboarddisc.png&apos; source=&apos;36,0,72,36&apos; mask=&apos;0xffff00ff&apos;" pushedimage="file=&apos;mapping_icon_keyboarddisc.png&apos; source=&apos;72,0,108,36&apos; mask=&apos;0xffff00ff&apos;" />
+                      <Label text="@mapping_keyboard_disc_name" height="32" textcolor="#00FFFFFF" disabledtextcolor="#FFA7A6AA" align="center" />
+                  </VerticalLayout>
+              </HorizontalLayout>
+              <HorizontalLayout height="75">
+                  <VerticalLayout width="86">
+                      <Button name="mouseMDiscBtn" width="36" height="36" padding="25,12,0,0" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;mapping_icon_mousemdisc.png&apos; source=&apos;0,0,36,36&apos; mask=&apos;0xffff00ff&apos;" hotimage="file=&apos;mapping_icon_mousemdisc.png&apos; source=&apos;36,0,72,36&apos; mask=&apos;0xffff00ff&apos;" pushedimage="file=&apos;mapping_icon_mousemdisc.png&apos; source=&apos;72,0,108,36&apos; mask=&apos;0xffff00ff&apos;" />
+                      <Label text="@mapping_mouse_mdisc_name" height="32" textcolor="#00FFFFFF" disabledtextcolor="#FFA7A6AA" align="center" />
+                  </VerticalLayout>
+                  <VerticalLayout width="86">
+                      <Button name="mouseDrag2Btn" width="36" height="36" padding="25,12,0,0" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;mapping_icon_mousedrag_2.png&apos; source=&apos;0,0,36,36&apos; mask=&apos;0xffff00ff&apos;" hotimage="file=&apos;mapping_icon_mousedrag_2.png&apos; source=&apos;36,0,72,36&apos; mask=&apos;0xffff00ff&apos;" pushedimage="file=&apos;mapping_icon_mousedrag_2.png&apos; source=&apos;72,0,108,36&apos; mask=&apos;0xffff00ff&apos;" />
+                      <Label text="@mapping_mouse_drag_2_name" height="32" textcolor="#00FFFFFF" disabledtextcolor="#FFA7A6AA" align="center" />
+                  </VerticalLayout>
+                  <VerticalLayout width="86">
+                      <Button name="keyboardDragBtn" width="36" height="36" padding="25,12,0,0" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;mapping_icon_keyboarddrag.png&apos; source=&apos;0,0,36,36&apos; mask=&apos;0xffff00ff&apos;" hotimage="file=&apos;mapping_icon_keyboarddrag.png&apos; source=&apos;36,0,72,36&apos; mask=&apos;0xffff00ff&apos;" pushedimage="file=&apos;mapping_icon_keyboarddrag.png&apos; source=&apos;72,0,108,36&apos; mask=&apos;0xffff00ff&apos;" />
+                      <Label text="@mapping_keyboard_drag_name" height="32" textcolor="#00FFFFFF" disabledtextcolor="#FFA7A6AA" align="center" />
+                  </VerticalLayout>
+              </HorizontalLayout>
+              <HorizontalLayout height="75">
+                  <VerticalLayout width="86">
+                      <Button name="mouseDiscBtn" width="36" height="36" padding="25,12,0,0" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;mapping_icon_mousedisc.png&apos; source=&apos;0,0,36,36&apos; mask=&apos;0xffff00ff&apos;" hotimage="file=&apos;mapping_icon_mousedisc.png&apos; source=&apos;36,0,72,36&apos; mask=&apos;0xffff00ff&apos;" pushedimage="file=&apos;mapping_icon_mousedisc.png&apos; source=&apos;72,0,108,36&apos; mask=&apos;0xffff00ff&apos;" />
+                      <Label text="@mapping_mouse_disc_name" height="32" textcolor="#00FFFFFF" disabledtextcolor="#FFA7A6AA" align="center" />
+                  </VerticalLayout>
+                  <VerticalLayout width="86">
+                      <Button name="mouseDragBtn" width="36" height="36" padding="25,12,0,0" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;mapping_icon_mousedrag.png&apos; source=&apos;0,0,36,36&apos; mask=&apos;0xffff00ff&apos;" hotimage="file=&apos;mapping_icon_mousedrag.png&apos; source=&apos;36,0,72,36&apos; mask=&apos;0xffff00ff&apos;" pushedimage="file=&apos;mapping_icon_mousedrag.png&apos; source=&apos;72,0,108,36&apos; mask=&apos;0xffff00ff&apos;" />
+                      <Label text="@mapping_mouse_drag_name" height="32" textcolor="#00FFFFFF" disabledtextcolor="#FFA7A6AA" align="center" />
+                  </VerticalLayout>
+                  <VerticalLayout width="86">
+                      <Button name="mouseTriggerBtn" width="36" height="36" padding="25,12,0,0" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;mapping_icon_mousetrigger.png&apos; source=&apos;0,0,36,36&apos; mask=&apos;0xffff00ff&apos;" hotimage="file=&apos;mapping_icon_mousetrigger.png&apos; source=&apos;36,0,72,36&apos; mask=&apos;0xffff00ff&apos;" pushedimage="file=&apos;mapping_icon_mousetrigger.png&apos; source=&apos;72,0,108,36&apos; mask=&apos;0xffff00ff&apos;" />
+                      <Label text="@mapping_mouse_trigger_name" height="32" textcolor="#00FFFFFF" disabledtextcolor="#FFA7A6AA" align="center" />
+                  </VerticalLayout>
+              </HorizontalLayout>
+              <HorizontalLayout height="75">
+                  <VerticalLayout width="86">
+                      <Button name="keyboardMacrosBtn" width="36" height="36" padding="25,12,0,0" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;mapping_icon_keyboardmacros.png&apos; source=&apos;0,0,36,36&apos; mask=&apos;0xffff00ff&apos;" hotimage="file=&apos;mapping_icon_keyboardmacros.png&apos; source=&apos;36,0,72,36&apos; mask=&apos;0xffff00ff&apos;" pushedimage="file=&apos;mapping_icon_keyboardmacros.png&apos; source=&apos;72,0,108,36&apos; mask=&apos;0xffff00ff&apos;" />
+                      <Label text="@mapping_keyboard_macros_name" height="32" textcolor="#00FFFFFF" disabledtextcolor="#FFA7A6AA" align="center" />
+                  </VerticalLayout>
+                  <VerticalLayout width="86">
+                      <Button name="mouseODiscBtn" width="36" height="36" padding="25,12,0,0" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;mapping_icon_mouseodisc.png&apos; source=&apos;0,0,36,36&apos; mask=&apos;0xffff00ff&apos;" hotimage="file=&apos;mapping_icon_mouseodisc.png&apos; source=&apos;36,0,72,36&apos; mask=&apos;0xffff00ff&apos;" pushedimage="file=&apos;mapping_icon_mouseodisc.png&apos; source=&apos;72,0,108,36&apos; mask=&apos;0xffff00ff&apos;" />
+                      <Label text="@mapping_mouse_odisc_name" height="32" textcolor="#00FFFFFF" disabledtextcolor="#FFA7A6AA" align="center" />
+                  </VerticalLayout>
+              </HorizontalLayout>
+          </VerticalLayout>
+          <VerticalLayout name="joystickMappingIcons">
+            <HorizontalLayout height="75">
+                <VerticalLayout width="86">
+                    <Button name="joystickPointBtn" width="36" height="36" padding="25,12,0,0" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;mapping_icon_joystickpoint.png&apos; source=&apos;0,0,36,36&apos; mask=&apos;0xffff00ff&apos;" hotimage="file=&apos;mapping_icon_joystickpoint.png&apos; source=&apos;36,0,72,36&apos; mask=&apos;0xffff00ff&apos;" pushedimage="file=&apos;mapping_icon_joystickpoint.png&apos; source=&apos;72,0,108,36&apos; mask=&apos;0xffff00ff&apos;" />
+                    <Label text="@mapping_single_point_name" height="32" textcolor="#00FFFFFF" disabledtextcolor="#FFA7A6AA" align="center" />
+                </VerticalLayout>
+                <VerticalLayout width="86">
+                    <Button name="joystickRepeatBtn" width="36" height="36" padding="25,12,0,0" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;mapping_icon_joystickrepeat.png&apos; source=&apos;0,0,36,36&apos; mask=&apos;0xffff00ff&apos;" hotimage="file=&apos;mapping_icon_joystickrepeat.png&apos; source=&apos;36,0,72,36&apos; mask=&apos;0xffff00ff&apos;" pushedimage="file=&apos;mapping_icon_joystickrepeat.png&apos; source=&apos;72,0,108,36&apos; mask=&apos;0xffff00ff&apos;" />
+                    <Label text="@mapping_repeat_point_name" height="32" textcolor="#00FFFFFF" disabledtextcolor="#FFA7A6AA" align="center" />
+                </VerticalLayout>
+                <VerticalLayout width="86">
+                    <Button name="joystickDiscBtn" width="36" height="36" padding="25,12,0,0" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;mapping_icon_joystickdisc.png&apos; source=&apos;0,0,36,36&apos; mask=&apos;0xffff00ff&apos;" hotimage="file=&apos;mapping_icon_joystickdisc.png&apos; source=&apos;36,0,72,36&apos; mask=&apos;0xffff00ff&apos;" pushedimage="file=&apos;mapping_icon_joystickdisc.png&apos; source=&apos;72,0,108,36&apos; mask=&apos;0xffff00ff&apos;" />
+                    <Label text="@mapping_joystick_disc_name" height="32" textcolor="#00FFFFFF" disabledtextcolor="#FFA7A6AA" align="center" />
+                </VerticalLayout>
+            </HorizontalLayout>
+            <HorizontalLayout height="75">
+                <VerticalLayout width="86">
+                    <Button name="joystickDragBtn" width="36" height="36" padding="25,12,0,0" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;mapping_icon_joystickdrag.png&apos; source=&apos;0,0,36,36&apos; mask=&apos;0xffff00ff&apos;" hotimage="file=&apos;mapping_icon_joystickdrag.png&apos; source=&apos;36,0,72,36&apos; mask=&apos;0xffff00ff&apos;" pushedimage="file=&apos;mapping_icon_joystickdrag.png&apos; source=&apos;72,0,108,36&apos; mask=&apos;0xffff00ff&apos;" />
+                    <Label text="@mapping_joystick_drag_name" height="32" textcolor="#00FFFFFF" disabledtextcolor="#FFA7A6AA" align="center" />
+                </VerticalLayout>
+                <VerticalLayout width="86">
+                     <Button name="joystickMacrosBtn" width="36" height="36" padding="25,12,0,0" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;mapping_icon_joystickmacros.png&apos; source=&apos;0,0,36,36&apos; mask=&apos;0xffff00ff&apos;" hotimage="file=&apos;mapping_icon_joystickmacros.png&apos; source=&apos;36,0,72,36&apos; mask=&apos;0xffff00ff&apos;" pushedimage="file=&apos;mapping_icon_joystickmacros.png&apos; source=&apos;72,0,108,36&apos; mask=&apos;0xffff00ff&apos;" />
+                     <Label text="@mapping_keyboard_macros_name" height="32" textcolor="#00FFFFFF" disabledtextcolor="#FFA7A6AA" align="center" />
+                </VerticalLayout>
+            </HorizontalLayout>
+          </VerticalLayout>
+         </TabLayout>
+    </VerticalLayout>
+</Window>

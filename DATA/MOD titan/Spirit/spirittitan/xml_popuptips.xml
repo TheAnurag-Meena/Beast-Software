@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="270,374" mininfo="270,374" caption="0,0,0,40">
+    <Font id="0" name="微软雅黑" size="12" bold="false" italic="false" />
+    <Font id="1" name="微软雅黑" size="14" bold="false" italic="false" />
+    <Font id="2" name="微软雅黑" size="16" bold="false" italic="false" />
+	<Font id="3" name="微软雅黑" size="18" bold="false" italic="false" />
+	<VerticalLayout>
+		<AdsTipsBrowser name="ie" clsid="{8856F961-340A-11D0-A96B-00C04FD705A2}"  delaycreate="false" padding="0,0,0,0"/>
+	</VerticalLayout>
+</Window>

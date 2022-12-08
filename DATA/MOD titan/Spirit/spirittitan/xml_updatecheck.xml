@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="360,200" caption="0,0,0,200" mininfo="300,150">
+    <Font id="0" name="微软雅黑" size="12" bold="false" italic="false" />
+    <Font id="1" name="微软雅黑" size="14" bold="false" italic="false" />
+    <Font id="2" name="微软雅黑" size="16" bold="false" italic="false" />
+	<Font id="3" name="微软雅黑" size="18" bold="false" italic="false" />
+    <VerticalLayout bkcolor="#FF353f50">
+      <HorizontalLayout height="40" bkcolor="#FF191F29">
+          <Label name="titlelabel" text="@UI.UpdateCheck.Title" width="164" textpadding="16,0,0,0" textcolor="#FFFEFFFF" disabledtextcolor="#FFA7A6AA" font="2" showhtml="true" />
+          <Control />
+          <Button name="closebtn" padding="0,3,4,0" width="34" height="34" align="center" normalimage="file=&apos;title_close_btn_s.png&apos; source=&apos;0,0,34,34&apos; mask=&apos;0xffff00ff&apos;" hotimage="file=&apos;title_close_btn_s.png&apos; source=&apos;34,0,68,34&apos;" pushedimage="file=&apos;title_close_btn_s.png&apos; source=&apos;68,0,102,34&apos;" />
+      </HorizontalLayout>
+      <VerticalLayout>
+			<Control />
+			<HorizontalLayout height="44" padding="0,10,0,0">
+                <Label name="CurrentActiveLabel" text="@UI.UpdateCheck.Checking" align="center" textcolor="#FFFEFFFF" disabledtextcolor="#FFA7A6AA" font="1" multiline="true" />
+			</HorizontalLayout>
+            <Progress name="UpdateProgressRate" text="0%" padding="20, 0, 20, 0" textcolor="#FFFEFFFF" font="3"  foreimage="root_progressfore.png" align="center" valign="vcenter" height="30" min="0" max="100" value="0" hor="true" />
+			<HorizontalLayout height="22" padding="20,5,20,0">
+				<Label name="TotalSizeValue" text="" align="left" padding="0,0,0,0" inset="0,0,0,0" textcolor="#FFFEFFFF" font="0" visible="true" />
+				<Label name="SpeedValue" text=""  align="right" padding="0,0,0,0" textcolor="#FFFEFFFF" font="0" visible="true" />
+			</HorizontalLayout>
+			<Button name="Cancel Button" width="159" height="32" font="1" text="@UI.Cancel" textcolor="#FFFEFEFE" padding="100,0,100,22" align="center" normalimage="file='gaga\Confirm_nor_btn.png'" hotimage="file='gaga\Confirm_light_btn.png'" pushedimage="file='gaga\Confirm_pressed_btn.png'" />
+	        <Control />
+		</VerticalLayout>
+    </VerticalLayout>
+</Window>

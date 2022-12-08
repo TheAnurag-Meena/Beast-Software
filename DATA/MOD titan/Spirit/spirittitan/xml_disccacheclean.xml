@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="410,226" caption="0,0,0,40" mininfo="300,200">
+	<Font name="微软雅黑" size="10" bold="false" italic="false" />
+    <VerticalLayout bkimage="file=&apos;windowbg_bold.png&apos; corner=&apos;4,4,4,4&apos; mask=&apos;0xffff00ff&apos;">
+        <HorizontalLayout height="36" bkcolor="#FF171a21">
+            <Label name="titlelabel" text="@prompt" width="164" textpadding="18,0,0,0" textcolor="#FFCCCCCC" disabledtextcolor="#FFA7A6AA" font="2" showhtml="true" />
+            <Control />
+            <Button name="closebtn" padding="0,3,4,0" width="34" height="34" align="center" normalimage="file=&apos;msg/msg_close_btn.png&apos; source=&apos;0,0,34,34&apos; mask=&apos;0xffff00ff&apos;" hotimage="file=&apos;msg/msg_close_btn.png&apos; source=&apos;34,0,68,34&apos;" pushedimage="file=&apos;msg/msg_close_btn.png&apos; source=&apos;68,0,102,34&apos;" />
+        </HorizontalLayout>
+        <VerticalLayout >
+            <HorizontalLayout>
+                <Control width="50" />
+                <Control name="msgiconimage" width="40" height="40" padding="39,46,0,0" bkimage="gaga/warning_icon.png" />
+                <Label name="descriptlabel" text="" width="273" textpadding="16,0,0,16" textcolor="#FFFFFFFF" disabledtextcolor="#FFA7A6AA" font="1" showhtml="true" />
+                <Control />
+            </HorizontalLayout>
+        		<HorizontalLayout height="52" >
+						<Control />
+						<Button name="yesbtn" text="@confirm" width="83" height="34" align="center" normalimage="file='gaga\save_normal_btn.png'" hotimage="file='gaga\save_light_btn.png'" pushedimage="file='gaga\save_pressed_btn.png'" />
+						<Control width="50" />
+						<Button name="nobtn"	text="@cancel" width="83" height="34" align="center" normalimage="file='gaga\cancel_normal_btn.png'" hotimage="file='gaga\cancel_light_btn.png'" pushedimage="file='gaga\cancel_pressed_btn'" />
+						<Control />
+        		</HorizontalLayout>
+        </VerticalLayout>
+    </VerticalLayout>
+</Window>
